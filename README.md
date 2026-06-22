@@ -168,7 +168,7 @@ jupyter notebook notebooks/RH_Route_Optimization.ipynb
 
 ## 📷 Dashboard Preview
 
-Screenshots of the Power BI report (route map, loading manifest, cost & CO₂ panels) live in [`dashboard/screenshots/`](dashboard/screenshots/). *(Add your exported PNGs there and they'll render here.)*
+Screenshots of the Power BI report (route map, loading manifest, cost & CO₂ panels) live in [`dashboard/screenshots/`](dashboard/screenshots/).
 
 ---
 
@@ -177,7 +177,7 @@ Screenshots of the Power BI report (route map, loading manifest, cost & CO₂ pa
 **Valentine Dube** — M.S. Business Analytics, Hult International Business School
 📍 Boston, MA · [LinkedIn](https://www.linkedin.com/in/valentine-dube) · [GitHub](https://github.com/ValentineDube)
 
-*Completed as a graduate analytics team project (RH summer-intern case, Team 8). This repository presents the analytical pipeline, optimization model, and dashboard architecture.*
+*This repository presents the analytical pipeline, optimization model, and dashboard architecture.*
 
 ## 📄 License
 
