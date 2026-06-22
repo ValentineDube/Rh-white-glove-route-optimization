@@ -136,8 +136,7 @@ rh-white-glove-route-optimization/
 ├── data/
 │   └── RH_Customer_Orders_Dataset_8.csv
 ├── dashboard/
-│   ├── RH_Delivery_Dashboard.pbix      # Power BI operations dashboard
-│   └── screenshots/                    # Dashboard images (add PNGs here)
+│   └── RH_Delivery_Dashboard.pbix      # Power BI operations dashboard (5 pages)
 ├── templates/
 │   └── Input_Config.xlsx               # Dynamic input that drives re-optimization
 └── docs/
@@ -166,24 +165,19 @@ jupyter notebook notebooks/RH_Route_Optimization.ipynb
 
 ---
 
-## 📷 Dashboard Preview
+## 📊 Power BI Dashboard
 
-The Power BI report is a **5-page operational tool** for the warehouse manager and driver — overview KPIs, an Azure-mapped route with schedule, operational and CO₂ deep-dives, and a disruption-scenario page.
+The interactive Power BI report ([`dashboard/RH_Delivery_Dashboard.pbix`](dashboard/RH_Delivery_Dashboard.pbix)) is a **5-page operational tool** for the warehouse manager and driver:
 
-**Manager Overview** — headline KPIs, daily distance, cost breakdown, and utilization
-![Manager Overview](dashboard/screenshots/01-manager-overview.png)
+| Page | Purpose |
+|---|---|
+| **Manager Overview** | Headline KPIs — cost, miles, CO₂, stops, utilization |
+| **Routing & Timeline** | Azure-mapped delivery route with per-stop schedule and arrival timeline |
+| **Operational Analysis** | Stops, cost-per-stop, and load/volume/weight utilization by vehicle |
+| **CO₂ Impact** | Emissions over time, per mile, per stop, and by vehicle |
+| **Scenario / Emergency Analysis** | Cost & CO₂ under disruption scenarios (Vehicle Breakdown, Traffic Delay vs. Base) |
 
-**Routing & Timeline** — Azure-mapped delivery route with per-stop schedule and arrival timeline
-![Routing & Timeline](dashboard/screenshots/02-routing-timeline.png)
-
-**Operational Analysis** — stops, cost-per-stop, and load/volume/weight utilization by vehicle
-![Operational Analysis](dashboard/screenshots/03-operational-analysis.png)
-
-**CO₂ Impact** — emissions over time, per mile, per stop, and by vehicle
-![CO2 Impact](dashboard/screenshots/04-co2-impact.png)
-
-**Scenario / Emergency Analysis** — cost & CO₂ under disruption scenarios (Vehicle Breakdown, Traffic Delay vs. Base)
-![Scenario Analysis](dashboard/screenshots/05-scenario-analysis.png)
+> Download the `.pbix` and open it in **Power BI Desktop** to explore the live, interactive report.
 
 ---
 
