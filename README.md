@@ -85,6 +85,22 @@ The optimized model puts the **average delivery cost at ≈$281**, leaving a thi
 
 ---
 
+## 🌱 Optimization Impact — vs. a Naive Baseline
+
+To quantify the value of the model, the optimized plan is compared against a **naive no-consolidation baseline** — one dedicated round trip per order, with **no batching and no route sequencing** — costed with the *exact same* labor, fuel, and CO₂ model and identical service times, so the only difference is routing efficiency.
+
+| Metric | Naive baseline | Optimized | Reduction |
+|---|---:|---:|---:|
+| Drive miles / week | 326.2 | **233.8** | **−28%** |
+| Operating cost / week | $4,685 | **$3,935** | **−16%** (≈ **$39,000/yr**) |
+| CO₂ emissions / week | 650.6 kg | **494.5 kg** | **−24%** (≈ **8.1 tonnes/yr**) |
+
+> Consolidating **14 single-stop trips into 6 optimized multi-stop routes** removes ~92 miles and ~156 kg CO₂ every week — turning an operational tweak into a measurable **ESG + margin** win.
+
+![Optimization Impact](assets/optimization_impact.png)
+
+---
+
 ## 🔁 Dynamic Replanning & Disruption Handling
 
 The pipeline isn't a one-shot batch job — it's built to **re-plan when reality changes**. The `Input_Config` template drives constraints (capacity, vehicle count, work window, daily mileage cap); editing it re-runs the optimization and refreshes the dashboard. The design accommodates real operational disruptions, e.g.:
