@@ -1,3 +1,5 @@
+![RH White-Glove Delivery Route Optimization](assets/hero_banner.png)
+
 # 🚚 RH White-Glove Delivery Route Optimization
 
 > An end-to-end analytics pipeline that minimizes **operational cost** and **CO₂ emissions** for Restoration Hardware's premium "White Glove" furniture delivery — from raw customer orders to an interactive Power BI operations dashboard with a live, disruption-ready replanning loop.
@@ -72,8 +74,14 @@ A full week of deliveries optimized into an efficient, low-carbon schedule:
 
 **Emission factors used:** 1.69 kg CO₂/mile (medium-duty box truck) · 3.97 kg CO₂/hr idling (EPA diesel) · labor $104/hr · truck $1.205/mile.
 
+![Results Overview](assets/results_overview.png)
+
+*Daily operating cost (labor + truck/fuel), CO₂ split into driving vs. idling, truck/crew utilization against the 9-hour capacity ceiling, and distance vs. cumulative cost — all computed by the optimization pipeline.*
+
 ### 💡 Business insight — should RH revisit the $299 flat fee?
 The optimized model puts the **average delivery cost at ≈$281**, leaving a thin and **highly variable** margin against the **$299** flat rate — compact, short-route orders cost as little as ~$80, while heavy, multi-room deliveries exceed $200+ in labor and staging alone. The recommendation (see [`docs/`](docs/Management_Recommendation_Memo.docx)): **keep $299 as the base and add a $349 premium tier** for high-complexity deliveries, protecting margin without eroding RH's curated-luxury brand positioning.
+
+![Cost per delivery vs $299 fee](assets/cost_per_delivery.png)
 
 ---
 
